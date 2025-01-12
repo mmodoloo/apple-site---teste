@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  
+  
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  gap: 22px;
+  overflow: visible;
+  padding: 20px;
+}
+
+.carousel-track img {
+  width: 33.333%; /* Mostra 3 imagens por vez */
+  flex-shrink: 0;
+  border-radius: 11px;
+  box-shadow: 0 4px 21px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+  display: block; 
+  border: none;
+  background-color: white;
+}
+
+
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.left-btn {
+  left: 0;
+}
+
+.right-btn {
+  right: 0;
+ 
+}
+     
+
+
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <button class="carousel-btn left-btn" id="leftBtn" disabled>&lt;</button>
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="Home novidades img/16 pro.jfif" alt="Imagem 1">
+            <img src="Home novidades img/ipad mini.jfif" alt="Imagem 2">
+            <img src="Home novidades img/ipad pro.jfif" alt="Imagem 3">
+            <img src="Home novidades img/mac book pro.jfif" alt="Imagem 4">
+            <img src="Home novidades img/mac mini.jfif" alt="Imagem 5">
+          </div>
+        </div>
+        <button class="carousel-btn right-btn" id="rightBtn">&gt;</button>
+      </div>
+
+      <script>
+
+const track = document.querySelector('.carousel-track');
+const leftBtn = document.getElementById('leftBtn');
+const rightBtn = document.getElementById('rightBtn');
+
+let currentIndex = 0; 
+const imagesToShow = 3; 
+const totalImages = track.children.length; 
+
+
+const imageWidth = track.children[0].getBoundingClientRect().width;
+
+
+function updateCarousel() {
+  const newPosition = -(currentIndex * imageWidth); 
+  track.style.transform = `translateX(${newPosition}px)`;
+
+
+
+          if (currentIndex === 0) {
+
+        leftBtn.style.opacity = 0;
+        leftBtn.style.pointerEvents = "none";
+        } 
+        else {
+
+        leftBtn.style.opacity = 1;
+        leftBtn.style.pointerEvents = "auto";
+        }
+
+        if ( currentIndex >= totalImages - imagesToShow) {
+
+        rightBtn.style.opacity = 0;
+        rightBtn.style.pointerEvents = "none"
+        }
+        else {
+
+        rightBtn.style.opacity = 1;
+        rightBtn.style.pointerEvents = "auto"
+        }
+
+        }
+
+
+rightBtn.addEventListener('click', () => {
+  if (currentIndex < totalImages - imagesToShow) {
+    currentIndex++;
+    updateCarousel();
+  }
+});
+
+leftBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
+  }
+});
+
+
+updateCarousel();
+
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,2148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=uynjhb, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>Apple Store Online - Apple (BR) </title> 
+
+    <link rel="shortcut icon" href="header/favicon.ico" type="image/x-icon">
+
+    
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+
+            background-color: #f5f5f7;
+
+
+
+        }
+
+        header {
+
+            width: 100%;
+            margin-top: 13px;
+            
+            
+        
+        }
+
+        #navbar {
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 45px;
+            
+            
+        }
+        #nav_list {
+
+            display: flex;
+            gap: 44px;
+            list-style: none;
+            
+        }
+
+        #nav_list a {
+
+            text-decoration: none;
+            font-size: 0.7em;
+            color: #616161;
+            font-family: "Poppins", sans-serif;
+            font-weight: 411;
+            
+        }
+        
+        .icones {
+
+            display: flex;
+            gap: 41px;
+            color: #616161;
+            cursor: pointer;
+        }
+
+        #Loja {
+
+            min-height: calc(30vh - 51px);
+            position: relative;
+            padding: 20px 8%;
+          
+            width: 90%;
+            height: 50%;
+            margin-top: 5.5%;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 3px;
+            
+            
+           
+        }
+        
+        #cta {
+
+            width: 50%;
+            font-family: "Poppins", sans-serif;
+             font-weight: 110;
+            font-style: normal;
+            font-size: 1.7rem;
+            
+
+            
+        }
+
+        #cta .title {
+
+            color: #6e6e73;
+        }
+
+        #cta span {
+
+            color: black;
+        }
+
+        .loja-links {
+
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 222px;
+        font-size: 0.9rem;
+        
+        
+
+
+
+}
+
+        #especialista {
+
+            display: flex;
+            gap: 11px;
+                    
+            
+            
+        }
+
+        #especialista img {
+
+            border-radius: 100%;
+            object-fit: cover;
+            width: 35px;
+            height: 35px;
+            
+        }
+
+        .esp content {
+
+            flex-direction: column;
+                 
+            
+           
+        }
+
+        
+
+        #visite {
+
+            display: flex;
+            justify-content: space-evenly;
+            
+
+
+        }
+
+        #visite img {
+
+            width: 25px;
+            height: 25px;
+
+            border: 1px solid black;
+            border-radius: 11px;
+            padding: 5px;
+
+            margin-left: -7px;
+            
+
+        }
+
+        .visite-content {
+
+            margin-left: 7px;
+        }
+
+           
+        #loja_images {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6%;
+            gap: 20px;
+            text-align: center;
+            cursor: pointer;
+
+            
+           
+        
+               
+        }
+
+        #loja_images img {
+
+            width: 125px;
+                height: auto;
+
+                transition: all .3s ease;
+
+                
+        }
+
+        #loja_images p {
+
+            margin-top: 11%;
+            transition: all .3s ease;
+        }
+
+        #loja_images p:hover {
+
+            text-decoration: underline;
+            
+        }
+
+        #loja_images img:hover  {
+
+            transform:scale(1.1);
+        }
+
+       
+
+        .novidades {
+
+            padding: 20px 8%;
+           
+            
+            }
+        .carousel {
+
+            position: relative;
+            margin-top: 10%;
+            width: 120.5%;
+            right: 11%;
+
+            overflow: hidden;
+
+            padding-left: 90px;
+
+           
+        
+
+            
+            
+            
+            
+        }
+
+        .carousel::-webkit-scrollbar {
+
+            display: none;
+        
+        }
+        
+        .carousel-images {
+            
+            display: flex;
+            gap: 22px;
+            transition: transform 0.5s ease-in-out;
+            padding: 20px;
+            width: 100%;
+            
+
+            
+            
+
+            
+            
+        }
+        .carousel-images img {
+            
+            height: 420px;
+            width: 500;
+            border-radius: 15px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+
+            cursor: pointer;
+
+            transition: all 0.3s ease;
+            
+
+            
+            
+           
+            
+        }
+
+       
+       
+        .novidades #cta_title {
+
+            font-family: "Poppins", sans-serif;
+            font-size: 1.1rem;
+            margin-top: 1%;
+            position: absolute;
+            bottom: 5%;
+        }
+
+        .novidades #cta_title span {
+
+            color: rgb(128, 128, 128);
+        }
+
+       .arrow {
+
+            position: absolute;
+
+           
+            top: 50%;
+            transform: translateY(-50%);
+            
+
+            transition:  opacity 0.5s ease,
+            background-color 0.3s ease;
+            opacity: 1;
+
+            background-color: rgba(255, 255, 255, 0.4);
+
+            backdrop-filter: blur(8px);
+
+            -webkit-backdrop-filter: blur(8px); 
+
+            border: none;
+            font-size: 1.5rem;
+            border-radius: 90%;
+            width: 60px;
+            height: 60px;
+            padding: 15px;
+            cursor: pointer;
+            z-index: 10;
+           
+            transition: opacity 0.5 ease;
+
+                    
+
+        }
+
+     
+
+        .left-arrow {
+
+            left: 4%;
+            right: 22%;
+           
+            opacity: 0;
+
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .left-arrow:not([hidden]) {
+
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+    
+        
+        .right-arrow {
+
+            
+            left: 93%;
+            
+
+        }
+
+        .right-arrow:not([hidden]) {
+
+            opacity: 1;
+            pointer-events: auto;
+        }
+     
+            
+        
+
+        .carousel-images img:hover
+         {
+
+            transform:scale(1.01);
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+        }
+
+        .arrow:hover 
+
+         {
+
+            background-color: rgba(255, 255, 255, 0.6);
+
+         }
+
+         .ajuda {
+
+            padding: 20px 8%;
+            margin-top: 2%;
+         }
+
+         .ajuda-cta-title {
+
+            font-family: "Poppins", sans-serif;
+            
+            position: absolute;
+            font-size: 1.1rem;
+         }
+        
+
+         .ajuda-cta-title span {
+
+             color: rgb(128, 128, 128);
+         }
+
+            .ajuda-carousel {
+
+                display: flex;
+                position: relative;
+                margin-top: 3%;
+                width: 131.5%;
+                right: 22%;
+
+                overflow: hidden;
+
+                padding-left: 233px;
+
+               
+            }
+         
+            .ajuda-carousel-images {
+
+                display: flex;
+                gap: 22px;
+                transition: transform 0.5s ease-in-out;
+                padding: 20px;
+                width: 100%;
+               
+            }
+
+            .ajuda-carousel-images img {
+
+                height: 420px;
+                width: 500;
+                border-radius: 15px;
+                box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+
+                cursor: pointer;
+
+                transition: all 0.3s ease;
+            }
+
+            .ajuda-carousel-images img:hover {
+
+                transform:scale(1.01);
+                box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+            }
+
+            .ajuda-arrow {
+
+                position: absolute;
+                top: 224%;
+
+           
+                
+                transform: translateY(-50%);
+
+
+                transition:  opacity 0.5s ease,
+                background-color 0.3s ease;
+
+                opacity: 1;
+
+                pointer-events: auto;
+
+
+                
+
+                
+            }
+
+            .left-arrow-ajuda {
+
+                background-color: rgba(255, 255, 255, 0.4);
+
+                backdrop-filter: blur(8px);
+
+                -webkit-backdrop-filter: blur(8px); 
+
+                border: none;
+                font-size: 1.5rem;
+                border-radius: 90%;
+                width: 60px;
+                height: 60px;
+                padding: 15px;
+                cursor: pointer;
+                z-index: 10;
+
+                transition: opacity 0.3s ease-in-out;
+
+                
+               
+               
+            }
+
+            .left-arrow-ajuda:not([hidden]) {
+
+            opacity: 1;
+            pointer-events: auto;
+
+            }
+
+            .right-arrow-ajuda {
+
+                background-color: rgba(255, 255, 255, 0.4);
+
+                backdrop-filter: blur(8px);
+
+                -webkit-backdrop-filter: blur(8px); 
+
+                border: none;
+                font-size: 1.5rem;
+                border-radius: 90%;
+                width: 60px;
+                height: 60px;
+                padding: 15px;
+                cursor: pointer;
+                z-index: 10;
+
+                margin-left: 1100px;
+
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            .right-arrow-ajuda:not([hidden]) {
+
+            opacity: 1;
+            pointer-events: auto;
+
+            }
+
+
+            .apple-store {
+
+                
+                margin-top: 2%;
+                overflow: hidden;
+                
+              
+               
+               
+                
+              
+            }
+            
+            .apple-store-cta {
+
+                font-family: "Poppins", sans-serif;
+                padding: 20px 8%;
+                
+                position: absolute;
+                font-size: 1.1rem;
+            }
+
+            .apple-store-cta-title span {
+
+                color: rgb(128, 128, 128);
+            }
+
+            .apple-store-all {
+
+                margin-top: 0.1%;
+                
+              
+                display: flex;
+                gap: 21px;
+                
+                padding: 11px;
+                width: 111rem;
+                
+               
+                overflow: hidden;
+
+                padding-left: 8%;
+                
+                transition: transform 0.8s ease-in-out;
+                
+                
+
+               
+
+                
+                
+            
+            }
+
+            #apple_store_content {
+
+                background-color: white;
+                height: 241px;
+                width: 333px; 
+                border-radius: 18px;
+                box-shadow: 2px 4px 12px #00000014;
+
+                padding: 30px 30px 0px;
+                font-family: "Poppins", sans-serif;
+
+                margin-top: 4%;
+
+                transition: all 0.3s ease;
+
+                cursor: pointer;
+            }
+
+            #apple_store_content:hover {
+
+                transform:scale(1.01);
+                box-shadow: 2px 4px 14px #00000014;
+            }
+            #apple_store_content h3 {
+
+                font: 24px;
+                color: black;
+            }
+
+            #apple_store_content i {
+
+                
+                font-size: 2rem;
+                height: 56px;
+                width: auto;
+               
+    
+            }
+
+            .apple-store-box {
+
+                color: #68cc45;
+                fill: #68cc45;
+            }
+            
+            .apple-store-card {
+
+                color: #68cc45;
+                fill: #68cc45;
+            }
+      
+            .apple-store-shopping {
+
+                color: #007aff;
+                fill: #007aff;
+            }
+
+            .apple-store-shopping span {
+
+                color: #007aff;
+                fill: #007aff;
+            }
+
+            .apple-store-mac i {
+
+        
+                background: rgb(251,165,78);
+                background: linear-gradient(90deg, rgba(251,165,78,0.9724264705882353) 0%, rgba(237,76,28,0.8855917366946778) 46%);
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+
+            .apple-store-mac span {
+
+                background: rgb(251,165,78);
+                background: linear-gradient(90deg, rgba(251,165,78,0.9724264705882353) 0%, rgba(237,76,28,0.8855917366946778) 18%, rgba(173,0,169,0.8855917366946778) 37%, rgba(0,173,171,0.9220063025210083) 63%, rgba(0,226,106,0.8687850140056023) 91%);
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+
+
+            .apple-store-arrow {
+
+                transform: translateY(-50%);
+                position: absolute;
+                
+                transition:  opacity 0.5s ease,
+                background-color 0.3s ease;
+
+                opacity: 1;
+
+                pointer-events: auto;
+
+               
+            }
+
+            .right-arrow-apple-store {
+
+                position: absolute;
+                
+                margin-left: 1266px;
+
+                top: -168px;
+                
+
+                background-color: rgba(255, 255, 255, 0.4);
+
+                backdrop-filter: blur(8px);
+
+                -webkit-backdrop-filter: blur(8px); 
+
+                border: none;
+                font-size: 1.5rem;
+                border-radius: 90%;
+                width: 60px;
+                height: 60px;
+                padding: 15px;
+                cursor: pointer;
+                z-index: 10;
+
+                transition: opacity 0.3s ease-in-out;
+
+            }
+
+            .left-arrow-apple-store {
+
+                position: absolute;
+
+                top: -168px;
+                
+                margin-left: 29px;
+
+                background-color: rgba(255, 255, 255, 0.4);
+
+                backdrop-filter: blur(8px);
+
+                -webkit-backdrop-filter: blur(8px); 
+
+                border: none;
+                font-size: 1.5rem;
+                border-radius: 90%;
+                width: 60px;
+                height: 60px;
+                padding: 15px;
+                cursor: pointer;
+                z-index: 10;
+
+
+
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            .apple-store-alert {
+
+                font-family: "Poppins", sans-serif;
+                
+               
+            
+                
+
+                
+
+                
+            }
+
+            .apple-store-alert h1 {
+
+                font-size: 40px;
+            }
+
+            .apple-store-alert p {
+
+                font-size: 17px;
+            }
+
+            .apple-store-alert a {
+
+                font-size: 17px;
+                
+            }
+
+            #box_alert  {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+              position: fixed;
+              background-color: white;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              
+              border-radius: 18px;
+              margin-top: -64px;
+              overflow: hidden;
+              padding: 65px;
+             width: 60%;
+
+             z-index: 1000;
+
+             opacity: 0;
+             pointer-events: none;
+             transition: opacity 0.2s ease-in-out;
+            }
+
+            #box_alert a {
+
+                text-decoration: none;
+            }
+
+            #box_alert a:hover {
+
+                text-decoration: underline;
+            }
+
+            #box_alert p {
+
+                color: rgb(61, 61, 61);
+            }
+            .overlay {
+
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color:  rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                z-index: 999;
+                pointer-events: none;
+                transition: opacity 0.2s ease-in-out;
+            }
+
+            #box_alert i {
+
+                position: absolute;
+               
+                
+                top: 16px;
+                right: 18px;
+
+                background: #e8e8ed;
+                border-radius: 50%;
+                color: #6e6e73;
+                display: flex;
+                height: 36px;
+                width: 36px;
+                align-items: center;
+                outline: none;
+                justify-content: center;
+                cursor: pointer;
+                
+            }
+
+           
+
+            #card_alert {
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+              position: fixed;
+              background-color: white;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              
+              border-radius: 18px;
+              margin-top: -64px;
+              overflow: hidden;
+              padding: 65px;
+             width: 60%;
+
+             z-index: 1000;
+
+             opacity: 0;
+             pointer-events: none;
+             transition: opacity 0.2s ease-in-out;
+
+            }
+
+            #card_alert p {
+
+                color: rgb(61, 61, 61);
+            }
+
+            #card_alert a {
+
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            #card_alert a:hover {
+
+                text-decoration: underline;
+            }
+
+            #card_alert i {
+
+                
+                position: absolute;
+                top: 16px;
+                right: 18px;
+                background: #e8e8ed;
+                border-radius: 50%;
+                color: #6e6e73;
+                display: flex;
+                height: 36px;
+                width: 36px;
+                align-items: center;
+                outline: none;
+                justify-content: center;
+                cursor: pointer;
+                opacity: 1;
+                transition: opacity 0.2s ease-in-out;
+            }
+
+
+
+            #shopping_alert {
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+              position: fixed;
+              background-color: white;
+              top: 58%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              box-sizing: border-box;
+              border-radius: 18px;
+              margin-top: -64px;
+
+              overflow-y: auto;
+
+              
+              
+              padding: 65px;
+             width: 60%;
+             height: 90%;
+                
+             z-index: 1000;
+
+             opacity: 0;
+             pointer-events: none;
+             transition: opacity 0.2s ease-in-out;
+
+             text-align: center;
+             align-items: center;
+
+            }
+
+            #shopping_alert img {
+
+                width: 71px;
+                height: 71px;
+            }
+
+            #shopping_alert #qr_code {
+
+                width: 150px;
+                height: 150px;
+                margin-top: 1%;
+            }
+            
+           #shopping_alert i {
+
+            position: absolute;
+                top: 16px;
+                right: 18px;
+                background: #e8e8ed;
+                border-radius: 50%;
+                color: #6e6e73;
+                display: flex;
+                height: 36px;
+                width: 36px;
+                align-items: center;
+                outline: none;
+                justify-content: center;
+                cursor: pointer;
+                opacity: 1;
+                transition: opacity 0.2s ease-in-out;
+            }
+           
+            #mac_alert {
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+              position: fixed;
+              background-color: white;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              
+             
+              border-radius: 18px;
+              margin-top: -64px;
+              overflow: hidden;
+              padding: 70px;
+             width: 60%;
+
+             z-index: 1000;
+
+             opacity: 0;
+             pointer-events: none;
+             transition: opacity 0.2s ease-in-out;
+            }
+
+            #mac_alert h1 {
+
+                font-size: 35px;
+            }
+
+            #mac_alert a {
+
+                text-decoration: none;
+                
+            }
+
+            #mac_alert a:hover {
+
+                text-decoration: underline;
+            }
+
+            #mac_alert i {
+
+                position: absolute;
+                top: 16px;
+                right: 18px;
+                background: #e8e8ed;
+                border-radius: 50%;
+                color: #6e6e73;
+                display: flex;
+                height: 36px;
+                width: 36px;
+                align-items: center;
+                outline: none;
+                justify-content: center;
+                cursor: pointer;
+                opacity: 1;
+                transition: opacity 0.2s ease-in-out;
+            }
+
+            .iphone16-cta {
+                font-family: "Poppins", sans-serif;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                top: 10%;
+                color: white;
+                left: 4%;
+                gap: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                pointer-events: none;
+                
+            } 
+
+          
+
+            .iphone16-cta h1 {
+
+                font-size: 26px;
+            }
+
+            .iphone16-cta h5 {
+
+                font-size: 12px;
+                
+            }
+            .watch-s10-cta {
+
+                font-family: "Poppins", sans-serif;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                top: 10%;
+                color: black;
+                left: 32%;
+                gap: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                pointer-events: none;
+
+
+            }
+
+            .watch-s10-cta h5 {
+                
+                color: white;
+            }
+
+            .ipad-mini-cta {
+
+                font-family: "Poppins", sans-serif;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                top: 10%;
+                color: black;
+                left: 60%;
+                gap: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                pointer-events: none;
+
+            }
+
+            .ipad-mini-cta h5 {
+
+                font-size: 12px;
+                color: #8a8a8a;;
+            }
+
+            .macbook-pro-cta {
+
+                font-family: "Poppins", sans-serif;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                top: 10%;
+                color: white;
+                left: 88%;
+                gap: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                pointer-events: none;
+                width: 50%;
+            }
+            .macbook-pro-cta h5 {
+
+                color: black;
+            }
+
+            .iphone16-azul-cta {
+
+                font-family: "Poppins", sans-serif;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                top: 10%;
+                color: white;
+                left: 116%;
+                gap: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                pointer-events: none;
+                width: 50%;
+            }
+
+            .iphone16-azul-cta h5 {
+                
+                font-size: 12px;
+
+            }
+
+            .watch-ultra2-cta {
+
+                font-family: "Poppins", sans-serif;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                top: 10%;
+                color: white;
+                left: 144%;
+                gap: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                pointer-events: none;
+                width: 50%;
+            }
+
+            .watch-ultra2-cta h5 {
+
+                color: black;
+            }
+
+            .ipad-air-cta {
+
+                font-family: "Poppins", sans-serif;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                top: 10%;
+                color: black;
+                left: 172%;
+                gap: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                pointer-events: none;
+                width: 50%;
+            }
+
+            .ipad-air-cta h5 {
+
+                color: transparent;
+            }
+
+            .mac-mini-cta {
+
+                font-family: "Poppins", sans-serif;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                top: 10%;
+                color: black;
+                left: 200%;
+                gap: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                pointer-events: none;
+                width: 50%;
+            }
+
+            .mac-mini-cta h5 {
+
+                color: transparent;
+            }
+    </style>
+
+</head>
+<body>
+    
+   <header>
+
+    <nav id="navbar">
+
+        <i class="fa-brands fa-apple"></i>
+
+        <ul id="nav_list">
+
+            <li class="nav-item">
+                <a href="">Loja</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="">Mac</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="">iPad</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="">iPhone</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="">Watch</a>
+            </li>
+            <li class="nav-item">
+                <a href="">AirPods</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="">TV e Casa</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="">Entreterimento</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="">Acessórios</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="">Suporte</a>
+            </li>
+        </ul>
+
+        <div class="icones">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+
+
+    </nav>
+   </header>
+
+   <main id="content">
+
+    <section id="Loja">
+
+        <div id="cta">
+            <h1 class="title">
+                <span>Loja.</span>O melhor jeito de comprar o que você ama.
+            </h1>
+
+           
+        </div>
+
+        <div class="loja-links">
+
+            <div id="especialista">
+                <img src="home loja IMG/especialista mulher.jfif" alt="">
+                <div class="esp content">
+                    <p><strong>Precisa de ajuda para comprar?</strong></p>
+                    <a href="">Fale com um especialista</a>
+                </div>
+            </div>
+
+            <div id="visite">
+
+                <img src="header/favicon.ico" alt="">
+
+                <div class="visite-content">
+
+                    <p>
+                        <strong>Visite uma Apple Store</strong>
+                    </p>
+                    
+                    <a href="">
+                        Procure uma loja perto de você
+                    </a>
+                    <span>></span>
+                </div>
+            </div>
+
+        </div>
+
+        
+       
+    </section>
+
+    <section class="loja-images">
+
+        <div id="loja_images">
+            
+            <div class="loja-mac">
+                <img src="home loja IMG/Mac.png" alt="">
+
+                
+                    <p>Mac</p>
+                
+            </div>
+
+            <div class="loja-iphone">
+                <img src="home loja IMG/iphone.png" alt="">
+
+                <p>iPhone</p>
+            </div>
+
+            <div class="loja-ipad">
+                <img src="home loja IMG/ipad.png" alt="">
+
+                <p>iPad</p>
+            </div>
+            <div class="loja-watch">
+                <img src="home loja IMG/apple watch.png" alt="">
+
+                <p>Apple Watch</p>
+            </div>
+
+            <div class="loja-airpods">
+                <img src="home loja IMG/air pods.png" alt="">
+
+                <p>AirPods</p>
+            </div>
+
+            <div class="loja-airtag">
+                <img src="home loja IMG/air tag.png" alt="">
+
+                <p>AirTag</p>
+            </div>
+
+            <div class="loja-tv">
+                <img src="home loja IMG/apple tv 4k.png" alt="">
+
+                <p>Apple TV 4K</p>
+            </div>
+
+            <div class="loja-acessorios">
+                <img src="home loja IMG/Acessorios.png" alt="">
+
+                <p>Acessorios</p>
+            </div>
+
+
+        </div>
+
+    </section>
+    
+    <section class="novidades">
+
+        <div class="cta">
+
+            <div id="cta_title">
+
+                <h2>As novidades.<span>Veja o que acabou de chegar.</span> </h2>
+            </div>
+        </div>
+
+        <div class="carousel">
+
+            <div class="carousel-images">
+
+                <div class="iphone16-content">
+                    <img 
+                     src="Home novidades img/16 pro.jfif"  
+                    alt="" id="iphone16">
+                    <div class="iphone16-cta">
+                        <h5>NOVO</h5>
+                        <h1>iPhone 16 Pro</h1>
+                        <h4>Feito para Apple Intelligence ∆</h4>
+                        <p>A partir de R$ 10.499</p>
+                    </div>
+                
+                </div>
+
+                <div class="watch-s10-content">
+                    <img src="Home novidades img/watch preto.jfif" alt="" id="watch_s10">
+
+                    <div class="watch-s10-cta">
+                        <h5>NOVO</h5>
+                        <h1>Apple Watch Series 10</h1>
+                        <h4>É coisa fina.</h4>
+                        <p>A partir de R$ 5.499</p>
+                    </div>
+                </div>
+
+                <div class="ipad_mini-content">
+                    <img src="Home novidades img/ipad mini.jfif" alt="" id="ipad_mini">
+
+                    <div class="ipad-mini-cta">
+                        <h5>NOVO</h5>
+                        <h1>iPad mini</h1>
+                        <h4>Feito para Apple Intelligence ∆</h4>
+                        <p>A partir de R$ 5.499</p>
+                    </div>
+                </div>
+
+                <div class="macbook-pro-content">
+                    <img src="Home novidades img/mac book pro.jfif" alt="" id="macbook_pro">
+
+                    <div class="macbook-pro-cta">
+                        <h5>NOVO</h5>
+                        <h1>MacBook Pro</h1>
+                        <h4>Feito para Apple Intelligence ∆</h4>
+                        <p>A partir de R$ 19.999</p>
+                    </div>
+                </div>
+
+                <div class="iphone16-azul-content">
+                    <img src="Home novidades img/iphone 16 azul.jfif" alt="" id="iphone16_azul">
+
+                    <div class="iphone16-azul-cta">
+                        <h5>NOVO</h5>
+                        <h1>iPhone 16 Pro</h1>
+                        <h4>Feito para Apple Intelligence ∆</h4>
+                        <p>A partir de R$ 7.799</p>
+                    </div>
+                </div>
+
+                <div class="watch-ultra2-content">
+                    <img src="Home novidades img/apple watch ultra 2.jfif" alt="" id="watch_ultra2">
+
+                    <div class="watch-ultra2-cta">
+
+                        <h5>NOVO</h5>
+                        <h1>Apple Watch Ultra 2</h1>
+                        <h4>Nova cor. Nunca amarela</h4>
+                        <p>A partir de R$ 10.499</p>
+                    </div>
+                </div>
+
+                <div class="ipad-air-content">
+                    <img src="Home novidades img/ipad air.jfif" alt="" id="ipad_air">
+                
+                    <div class="ipad-air-cta">
+                        <h5>NOVO</h5>
+                        <h1>iPad Air</h1>
+                        <h4>Feito para Apple Intelligence ∆</h4>
+                        <p>A partir de R$ 6.999</p>
+                    </div>
+                </div>
+
+                <div class="mac-mini-content">
+                    <img src="Home novidades img/mac mini.jfif" alt="" id="mac_mini">
+
+                    <div class="mac-mini-cta">
+                        <h5>NOVO</h5>
+                        <h1>Mac mini</h1>
+                        <h4>Feito para Apple Intelligence ∆</h4>
+                        <p>A partir de R$ 7.499</p>
+                    </div>
+                </div>
+
+                <img src="Home novidades img/ipad pro.jfif" alt="" id="ipad_pro">
+
+                <img src="Home novidades img/mac book air.jfif" alt="" id="macbook_air">
+
+                <img src="Home novidades img/imac.jfif" alt="" id="imac">
+
+                <img src="Home novidades img/apple watch se.jfif" alt="" id="watch_se">
+            </div>
+
+            
+                <button class="arrow left-arrow">
+                    &lt;
+                </button>
+                <button class="arrow right-arrow">
+                    &gt;
+                </button>
+            
+            
+        </div>
+
+    </section>
+
+    <section class="ajuda">
+
+        <div class="ajuda-cta">
+
+            <div class="ajuda-cta-title">
+                <h2>A ajuda está aqui. <span>Quando e como você precisar.</span></h2>
+                
+            </div>
+        </div>
+
+       
+            <div class="ajuda-carousel">
+                    <div class="ajuda-carousel-images">
+                        <img src="ajuda img/Especialista da Apple.jfif" alt="">
+                        <img src="ajuda img/Genius Bar.jfif" alt="">
+                        <img src="ajuda img/today at apple.jfif" alt="">
+                        <img src="ajuda img/vem para o iphone.jfif" alt="">
+                    </div>
+            </div>
+        
+
+            <div class="ajuda-arrow">
+                <button class="left-arrow-ajuda">
+                    &lt;
+                </button>
+                <button class="right-arrow-ajuda">
+                    &gt;
+                </button>
+            </div>
+            
+            
+        
+    </section>
+
+    <section class="apple-store">
+
+        <div class="apple-store-cta">
+            <div class="apple-store-cta-title">
+
+                <h2>Na Apple Store, é diferente.<span> Ainda mais motivos para comprar com a gente.</span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="apple-store-all">
+            <div id="apple_store_content">
+                    <div class="apple-store-box">
+                    <i class="fa-solid fa-box"></i>
+                    <h3>Frete grátis em todos os pedidos.</h3>
+                </div>
+            </div>
+
+            <div id="apple_store_content">
+                <div class="apple-store-card">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <h3>Várias opções de parcelamento.</h3>
+                </div>
+            </div>
+
+            <div id="apple_store_content">
+                <div class="apple-store-shopping">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h3>Tenha uma experiência <span>de compra personalizada</span> com o <span>app Apple Store.</span></h3>
+                </div>
+            </div>
+
+            <div id="apple_store_content">
+                <div class="apple-store-mac">
+                    <i class="fa-brands fa-apple"></i>
+                    <h3><span>Personalize</span> seu Mac.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="apple-store-arrow">
+            <button class="left-arrow-apple-store">
+                &lt;
+            </button>
+            <button class="right-arrow-apple-store">
+                &gt;
+            </button>
+        </div>
+
+        <div class="apple-store-alert">
+            <div class="apple-store-alert-content">
+
+                <div id="box_alert">
+                    <h1>Entrega padrão gratuita.</h1>
+                    <p>Entrega sem custo na porta da sua casa.</p>
+                    <a href="">Saiba mais sobre a entrega &gt;</a>
+                    <div class="close-button"><i class="fa-solid fa-x"></i></div>
+                </div>
+
+                <div class="overlay" id="overlay"></div>
+                
+                <div id="card_alert">
+                    <h1>Pague do jeito que ficar melhor.</h1>
+                    <p>Economize 10% pagando à vista com cartão de crédito. 
+                        Parcele em 12x com American Express® Membership, Visa 
+                        ou Mastercard. Ou divida o valor entre dois cartões.</p>
+                    <a href="">Saiba mais &gt;</a>
+
+                    <div class="close-button1">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+
+                    <div class="overlay" id="overlay"></div>
+                </div>
+
+                <div id="shopping_alert">
+
+                    <img src="Apple Store - Alert images/Shopping Icon.png" alt="">
+                    <h1>Compre com o app Apple Store. Uma experiência sob medida para você.</h1>
+                    <p>Receba recomendações personalizadas de produtos, compare modelos, 
+                        acesse seus Itens salvos e acompanhe seus pedidos. Inscreva-se para 
+                        receber informações sobre produtos novos, promoções, opções flexíveis 
+                        de pagamento e eventos da loja. <br><br>
+
+                        Escaneie o código QR para começar.</p>
+                        <img id="qr_code" src="Apple Store - Alert images/QR Code.png" alt="">
+
+                        <div class="close-button2">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+
+                        <div class="overlay" id="overlay"></div>
+                </div>
+
+
+                    <div id="mac_alert">
+                        <h1>Configure o Mac mais adequado para você.</h1>
+                        <p>Quando você compra online na Apple, pode personalizar
+                             o Mac como quiser. Configure seu Mac com um chip mais potente, 
+                             mais memória ou mais armazenamento. Deixe o Mac na medida para o que você faz.</p>
+                             <a href="">Comprar MAC &gt;</a>
+
+                             <div class="close-button3">
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+
+                            <div class="overlay" id="overlay"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        
+    </section>
+   </main>
+    <script>
+
+        const carouselImg = document.querySelector('#iphone16');
+        const iphone16Cta = document.querySelector('.iphone16-cta');
+        
+        carouselImg.addEventListener('mouseenter', function() {
+
+            iphone16Cta.style.transform = 'scale(1.01)';
+
+        });
+
+        carouselImg.addEventListener('mouseleave', function() {
+
+        iphone16Cta.style.transform = 'scale(1.0)';
+
+});
+
+        const watchs10Img = document.querySelector('#watch_s10')
+        const watchs10Cta = document.querySelector('.watch-s10-cta'); 
+        
+        watchs10Img.addEventListener('mouseenter', function() {
+
+            watchs10Cta.style.transform = 'scale(1.01)';
+
+        });
+
+        watchs10Img.addEventListener('mouseleave', function() {
+
+        watchs10Cta .style.transform = 'scale(1.0)';
+
+    });
+
+        const ipadMiniImg = document.querySelector('#ipad_mini')
+        const iPadMiniCta = document.querySelector('.ipad-mini-cta'); 
+        
+        ipadMiniImg.addEventListener('mouseenter', function() {
+
+            iPadMiniCta.style.transform = 'scale(1.01)';
+
+        });
+
+        ipadMiniImg.addEventListener('mouseleave', function() {
+
+        iPadMiniCta.style.transform = 'scale(1.0)';
+
+    });
+    
+        const macBookProImg = document.querySelector('#macbook_pro')
+        const macBookProCta = document.querySelector('.macbook-pro-cta'); 
+        
+        macBookProImg.addEventListener('mouseenter', function() {
+
+            macBookProCta.style.transform = 'scale(1.01)';
+
+        });
+
+        macBookProImg.addEventListener('mouseleave', function() {
+
+        macBookProCta.style.transform = 'scale(1.0)';
+
+    });
+        const iphone16AzulImg = document.querySelector('#iphone16_azul')
+        const iphone16AzulCta = document.querySelector('.iphone16-azul-cta'); 
+        
+        iphone16AzulImg.addEventListener('mouseenter', function() {
+
+            iphone16AzulCta.style.transform = 'scale(1.01)';
+
+        });
+
+        iphone16AzulImg.addEventListener('mouseleave', function() {
+
+        iphone16AzulCta.style.transform = 'scale(1.0)';
+
+    });
+
+        const watchUltra2Img = document.querySelector('#watch_ultra2')
+        const WatchUltra2Cta = document.querySelector('.watch-ultra2-cta'); 
+        
+        watchUltra2Img.addEventListener('mouseenter', function() {
+
+            WatchUltra2Cta.style.transform = 'scale(1.01)';
+
+        });
+
+        watchUltra2Img.addEventListener('mouseleave', function() {
+
+        WatchUltra2Cta.style.transform = 'scale(1.0)';
+
+    });
+
+        const ipadAirImg = document.querySelector('#ipad_air')
+        const ipadAirCta = document.querySelector('.ipad-air-cta'); 
+        
+        ipadAirImg.addEventListener('mouseenter', function() {
+
+            ipadAirCta.style.transform = 'scale(1.01)';
+
+        });
+
+        ipadAirImg.addEventListener('mouseleave', function() {
+
+        ipadAirCta.style.transform = 'scale(1.0)';
+
+    });
+
+        const macMiniImg = document.querySelector('#mac_mini')
+        const macMiniCta = document.querySelector('.mac-mini-cta'); 
+        
+        macMiniImg.addEventListener('mouseenter', function() {
+
+            macMiniCta.style.transform = 'scale(1.01)';
+
+        });
+
+        macMiniImg.addEventListener('mouseleave', function() {
+
+        macMiniCta.style.transform = 'scale(1.0)';
+
+    });
+
+    </script>
+   <script>
+
+
+    function initCarousel() {
+
+     
+        const track = document.querySelector('.carousel-images');
+        const leftBtn = document.querySelector('.left-arrow');
+        const rightBtn = document.querySelector('.right-arrow');
+
+        let currentIndex = 0; 
+        const imagesToShow = 2; 
+        const totalImages = track.children.length; 
+
+        const imageWidth = track.children[0].getBoundingClientRect().width;
+
+        function updateCarousel() {
+        const newPosition = -(currentIndex * imageWidth); 
+        track.style.transform = `translateX(${newPosition}px)`;
+
+      
+        if (currentIndex === 0) {
+
+            leftBtn.style.opacity = 0;
+            leftBtn.style.pointerEvents = "none";
+        } 
+        else {
+
+            leftBtn.style.opacity = 1;
+            leftBtn.style.pointerEvents = "auto";
+        }
+
+        if ( currentIndex >= totalImages - imagesToShow) {
+
+            rightBtn.style.opacity = 0;
+            rightBtn.style.pointerEvents = "none"
+        }
+         else {
+
+            rightBtn.style.opacity = 1;
+            rightBtn.style.pointerEvents = "auto"
+         }
+
+        }
+
+        rightBtn.addEventListener('click', () => {
+        if (currentIndex < totalImages - imagesToShow) {
+            currentIndex++;
+            updateCarousel();
+        }
+        });
+
+        leftBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+        });
+
+        updateCarousel();
+    }
+
+    initCarousel();
+   </script>
+
+   <script>
+    
+    
+     
+     const track = document.querySelector('.ajuda-carousel-images');
+     const leftBtn = document.querySelector('.left-arrow-ajuda');
+     const rightBtn = document.querySelector('.right-arrow-ajuda');
+
+     let currentIndex = 0; 
+     const imagesToShow = 2; 
+     const totalImages = track.children.length; 
+
+     const imageWidth = track.children[0].getBoundingClientRect().width;
+
+     
+
+     function updateCarousel() {
+     const newPosition = -(currentIndex * imageWidth); 
+     track.style.transform = `translateX(${newPosition}px)`;
+
+   
+     if (currentIndex === 0) {
+
+         leftBtn.style.opacity = 0;
+         leftBtn.style.pointerEvents = "none";
+     } 
+     else {
+
+         leftBtn.style.opacity = 1;
+         leftBtn.style.pointerEvents = "auto";
+     }
+
+     if ( currentIndex >= totalImages - imagesToShow) {
+
+         rightBtn.style.opacity = 0;
+         rightBtn.style.pointerEvents = "none"
+     }
+      else {
+
+         rightBtn.style.opacity = 1;
+         rightBtn.style.pointerEvents = "auto"
+      }
+
+     }
+
+     rightBtn.addEventListener('click', () => {
+     if (currentIndex < totalImages - imagesToShow) {
+         currentIndex++;
+         updateCarousel();
+     }
+     });
+
+     leftBtn.addEventListener('click', () => {
+     if (currentIndex > 0) {
+         currentIndex--;
+         updateCarousel();
+     }
+     });
+
+     updateCarousel();
+   </script>
+   
+   <script>
+
+    function initCarousel() {
+
+        
+    const track = document.querySelector('.apple-store-all');
+    const leftBtn = document.querySelector('.left-arrow-apple-store');
+    const rightBtn = document.querySelector('.right-arrow-apple-store');
+
+    let currentIndex = 0;
+
+    const imagesToShow = 3;
+
+    const totalImages = track.children.length;
+
+    const imagesWidth = track.children[0].getBoundingClientRect().width;
+
+    function updateCarousel() {
+
+        const newPosition = -(currentIndex * imageWidth);
+
+        track.style.transform = `translateX(${newPosition}px)`;
+
+        if (currentIndex === 0) {
+
+            leftBtn.style.opacity = 0;
+            leftBtn.style.pointerEvents = "none";
+
+        } else {
+
+            leftBtn.style.opacity = 1;
+            leftBtn.style.pointerEvents = "auto";
+        }
+    
+
+    if (currentIndex >= totalImages - imagesToShow) {
+
+        rightBtn.style.opacity = 0;
+        rightBtn.style.pointerEvents = "none"
+    } 
+    else {
+
+        rightBtn.style.opacity = 1;
+        rightBtn.style.pointerEvents = "auto"
+
+    }
+}
+
+    rightBtn.addEventListener('click', () => {
+
+        if (currentIndex < totalImages - imagesToShow) {
+
+            currentIndex++;
+            updateCarousel();
+        }
+    })
+
+    leftBtn.addEventListener('click', () => {
+
+        if (currentIndex > 0) {
+
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+
+    updateCarousel()
+         
+}
+
+initCarousel();
+
+   </script>
+
+   <script>
+
+    const appleStoreBox = document.querySelector('.apple-store-box');
+    const boxAlert = document.querySelector('#box_alert');
+    const overlay = document.querySelector('.overlay');
+    const closeButton = document.querySelector('.close-button');
+    const body = document.body;
+
+    appleStoreBox.addEventListener('click', function() {
+
+        boxAlert.style.opacity = 1;
+        boxAlert.style.pointerEvents = 'auto';
+        overlay.style.opacity = 1;
+        overlay.style.pointerEvents = 'auto'
+        body.style.overflow = 'hidden'
+        
+       
+    });
+
+    closeButton.addEventListener('click', function() {
+
+        boxAlert.style.opacity = 0;
+        overlay.style.opacity = 0;
+        body.style.overflow = '';   
+        overlay.style.pointerEvents = 'none'
+        
+    })
+
+    overlay.addEventListener('click', function() {
+        boxAlert.style.opacity = 0;
+        overlay.style.opacity = 0;
+        body.style.overflow = '';   
+        overlay.style.pointerEvents = 'none';
+      
+
+        
+    })
+   </script>
+
+   <script>
+
+
+    const cardBox = document.querySelector('.apple-store-card');
+    const cardAlert1 = document.querySelector('#card_alert');
+    const overlay1 = document.querySelector('.overlay');
+    const closeButton1 = document.querySelector('.close-button1');
+    const body1 = document.body;
+
+    cardBox.addEventListener('click', function() {
+
+        cardAlert1.style.opacity = 1;
+        cardAlert1.style.pointerEvents = 'auto';
+        overlay1.style.opacity = 1;
+        overlay1.style.pointerEvents = 'auto'
+        body1.style.overflow = 'hidden'
+        closeButton1.style.opacity = 1; 
+       
+    });
+
+    closeButton1.addEventListener('click', function() {
+
+       cardAlert1.style.opacity = 0;
+        overlay1.style.opacity = 0;
+        body1.style.overflow = '';   
+        overlay1.style.pointerEvents = 'none'
+        closeButton1.style.opacity = 0; 
+        
+    })
+
+    overlay1.addEventListener('click', function() {
+        cardAlert1.style.opacity = 0;
+        overlay1.style.opacity = 0;
+        body1.style.overflow = '';   
+        overlay1.style.pointerEvents = 'none';
+        closeButton1.style.opacity = 0;
+      
+
+        
+    })
+   </script>
+
+   <script>
+
+    const shoppingBox = document.querySelector('.apple-store-shopping');
+    const shoppingAlert = document.querySelector('#shopping_alert');
+    const overlay2 = document.querySelector('.overlay');
+    const closeButton2 = document.querySelector('.close-button2');
+    const body2 = document.body;
+
+    shoppingBox.addEventListener('click', function() {
+
+        shoppingAlert.style.opacity = 1;
+        shoppingAlert.style.pointerEvents = 'auto';
+        overlay2.style.opacity = 1;
+        overlay2.style.pointerEvents = 'auto'
+        body2.style.overflow = 'hidden'
+        closeButton2.style.opacity = 1; 
+       
+    });
+
+    closeButton2.addEventListener('click', function() {
+
+       shoppingAlert.style.opacity = 0;
+        overlay2.style.opacity = 0;
+        body2.style.overflow = '';   
+        overlay2.style.pointerEvents = 'none'
+        closeButton2.style.opacity = 0; 
+        
+    })
+
+    overlay2.addEventListener('click', function() {
+        shoppingAlert.style.opacity = 0;
+        overlay2.style.opacity = 0;
+        body2.style.overflow = '';   
+        overlay2.style.pointerEvents = 'none';
+        closeButton2.style.opacity = 0;
+      
+    });
+   </script>
+
+   <script>
+
+    const macBox = document.querySelector('.apple-store-mac');
+    const macAlert = document.querySelector('#mac_alert');
+    const overlay3 = document.querySelector('.overlay');
+    const closeButton3 = document.querySelector('.close-button3');
+    const body3 = document.body;
+
+    macBox.addEventListener('click', function() {
+
+        macAlert.style.opacity = 1;
+        macAlert.style.pointerEvents = 'auto';
+        overlay3.style.opacity = 1;
+        overlay3.style.pointerEvents = 'auto'
+        body3.style.overflow = 'hidden'
+        closeButton3.style.opacity = 1; 
+       
+    });
+
+    closeButton3.addEventListener('click', function() {
+
+       macAlert.style.opacity = 0;
+        overlay3.style.opacity = 0;
+        body3.style.overflow = '';   
+        overlay3.style.pointerEvents = 'none'
+        closeButton3.style.opacity = 0; 
+        
+    })
+
+    overlay3.addEventListener('click', function() {
+        macAlert.style.opacity = 0;
+        overlay3.style.opacity = 0;
+        body3.style.overflow = '';   
+        overlay3.style.pointerEvents = 'none';
+        closeButton3.style.opacity = 0;
+      
+    });
+
+   </script>
+</body>
+</html>
